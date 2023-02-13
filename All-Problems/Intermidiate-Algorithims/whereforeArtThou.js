@@ -8,8 +8,10 @@ try {
 
     return collection.filter(obj =>{
         for(let key of convertArr){
-            // console.log(obj[key]);
-            // console.log(source[key]);
+
+            console.log(obj[key]);
+            console.log(source[key]);
+
            if(!obj.hasOwnProperty(key) || obj[key] != source[key]){
             return false
            }
@@ -22,4 +24,6 @@ try {
 }
 }
 
-whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+let result = whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+
+result;
