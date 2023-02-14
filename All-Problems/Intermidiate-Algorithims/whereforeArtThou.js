@@ -9,13 +9,11 @@ try {
     return collection.filter(obj =>{
         for(let key of convertArr){
 
-            console.log(obj[key]);
-            console.log(source[key]);
-
            if(!obj.hasOwnProperty(key) || obj[key] != source[key]){
             return false
            }
            return true
+
         }
     })
     
