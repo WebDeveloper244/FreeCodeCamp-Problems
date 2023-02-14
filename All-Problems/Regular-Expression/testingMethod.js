@@ -116,3 +116,29 @@ let quoteSample3 = "3 blind mice.";
 let myRegex2 = /[^aeiou0-9]/gi; // Change this line
 let result6 = quoteSample3.match(myRegex2);
 console.log(result6);
+
+
+/*  
+Match Characters that Occur One or More Times with + chr
+*/
+
+
+let difficultSpelling = "Mississippi";
+let myRegex3 = /s+/g; // Change this line
+let result7 = difficultSpelling.match(myRegex3);
+result7;
+
+
+/*  
+Match Characters that Occur Zero or More Times
+*/
+
+
+// Only change code below this line
+let chewieQuote =  'Aaaaaaaaaaaaaaaarrrgh!'
+let chewieRegex = /Aa*/g; // Change this line
+// Only change code above this line
+
+let result8 = chewieQuote.match(chewieRegex);
+
+result8
