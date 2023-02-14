@@ -199,4 +199,28 @@ Match Everything But Letters and Numbers \W
 let str1 = "The five boxing wizards jump quickly.";
 let nonAlphabetRegex = /\W/g; // Change this line
 let res5 = quoteSample.match(nonAlphabetRegex).length;
-res5
+res5;
+
+
+/*  
+Match All Numbers \d
+*/
+
+// The shortcut to look for digit characters is \d, with a lowercase d. This is equal to the character class [0-9], which looks for a single character of any number between zero and nine.
+
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g; // Change this line
+let res6 = movieName.match(numRegex).length;
+res6;
+
+
+/*  
+Match All Non-Numbers \D
+*/
+
+// The shortcut to look for non-digit characters is \D. This is equal to the character   class [^0-9].
+
+let movie = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; // Change this line
+let res7 = movie.match(noNumRegex).length;
+res7;
