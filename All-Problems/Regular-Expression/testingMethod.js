@@ -141,7 +141,7 @@ let chewieRegex = /Aa*/g; // Change this line
 
 let result8 = chewieQuote.match(chewieRegex);
 
-result8
+result8;
 
 
 /*  
