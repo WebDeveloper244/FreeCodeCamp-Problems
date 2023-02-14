@@ -158,5 +158,10 @@ result9;
 
 
 /*  
-Find Characters with Lazy Matching with ? chr
+you can search the patterns use caret ^ outside the character
 */
+
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let res2 = calRegex.test(rickyAndCal);
+res2;
