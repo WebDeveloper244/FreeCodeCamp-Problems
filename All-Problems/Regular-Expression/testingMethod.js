@@ -87,4 +87,9 @@ result3;
 Match Letters of the Alphabet
 */
 
-// 
+// Inside a character set, you can define a range of characters to match using a hyphen character: -
+
+let quoteSample1 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result4 = quoteSample1.match(alphabetRegex);
+result4
