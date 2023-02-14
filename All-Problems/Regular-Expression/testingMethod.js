@@ -142,3 +142,21 @@ let chewieRegex = /Aa*/g; // Change this line
 let result8 = chewieQuote.match(chewieRegex);
 
 result8
+
+
+/*  
+Find Characters with Lazy Matching with ? chr
+*/
+
+// if you add ?i then it find 'titanic' to 'ti' coz it lazy
+
+
+let text = "<h1>Winter is coming</h1>";
+let myRegex4 = /<.*?>/; // Change this line
+let result9 = text.match(myRegex4);
+result9;
+
+
+/*  
+Find Characters with Lazy Matching with ? chr
+*/
