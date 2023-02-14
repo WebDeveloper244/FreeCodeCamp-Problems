@@ -72,3 +72,19 @@ let result2 = unRegex.test(exampleStr);
 Match Single Character with Multiple Possibilities
 */
 
+
+// Matching Single Character with Multiple Possibilities with '/b[aiu]g'
+// get this bag,big,bug
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result3 = quoteSample.match(vowelRegex);
+result3;
+
+
+
+/*  
+Match Letters of the Alphabet
+*/
+
+// 
