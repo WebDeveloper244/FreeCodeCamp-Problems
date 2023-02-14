@@ -93,3 +93,26 @@ let quoteSample1 = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi; // Change this line
 let result4 = quoteSample1.match(alphabetRegex);
 result4
+
+
+/*  
+Match Numbers and Letters of the Alphabet
+*/
+
+// // Inside a character set, you can define a range of characters and Numbers to match using a hyphen character: -
+
+let quoteSample2 = "Blueberry 3.141592653s are delicious.";
+let myRegex1 = /[h-s2-6]/gi; // Change this line
+let result5 = quoteSample2.match(myRegex1);
+
+
+/*  
+Match Single Characters Not Specified
+*/
+
+// with ^ char...
+
+let quoteSample3 = "3 blind mice.";
+let myRegex2 = /[^aeiou0-9]/gi; // Change this line
+let result6 = quoteSample3.match(myRegex2);
+console.log(result6);
