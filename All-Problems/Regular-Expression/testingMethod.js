@@ -66,3 +66,9 @@ Match Anything with Wildcard Period
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/; // Change this line
 let result2 = unRegex.test(exampleStr);
+
+
+/*  
+Match Single Character with Multiple Possibilities
+*/
+
