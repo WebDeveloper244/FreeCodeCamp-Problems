@@ -8,17 +8,14 @@ function translatePigLatin(str) {
 
     for(let i=0; i<str.length; i++){
         let singleValue = str[i];
-        if(vowels.indexOf(singleValue) !== -1 && i===0){
+        if(vowels.indexOf(singleValue) != -1 && i===0){
           return str + "way"
         }
-        if(vowels.indexOf(singleValue) !== -1){
-            return str.slice(i) + str.slice(0,1)+ "ay"
+        if(vowels.indexOf(singleValue) != -1){
+            return str.slice(i) + str.slice(0,i)+ "ay"
         } 
     }
-    return str + "ay";
-
-
-    
+    return str + "ay";  
 }
   
   let result = translatePigLatin("algorithm");
