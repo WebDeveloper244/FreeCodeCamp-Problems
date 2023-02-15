@@ -224,3 +224,8 @@ let movie = "2001: A Space Odyssey";
 let noNumRegex = /\D/g; // Change this line
 let res7 = movie.match(noNumRegex).length;
 res7;
+
+/*  
+Matching White Space Letter
+*/
+
