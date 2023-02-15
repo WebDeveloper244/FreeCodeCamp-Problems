@@ -4,18 +4,23 @@ Pig Latin
 
 function translatePigLatin(str) {
 
-    let firstVowels = str.match(/[aeiou]/);
-    let firstIndex = str.indexOf(firstVowels);
+    let vowels = "aeiou".split('');
 
+    for(let i=0; i<str.length; i++){
+        let singleValue = str[i];
+        if(vowels.indexOf(singleValue) !== -1 && i===0){
+          return str + "way"
+        }
+        if(vowels.indexOf(singleValue) !== -1){
+            return str.slice(i) + str.slice(0,1)+ "ay"
+        } 
+    }
+    return str + "ay";
 
-     if(firstIndex > 0){
-        return str.slice(firstIndex)+str.slice(0,firstIndex) + 'ay';
-     }
-     return str + "way" 
 
     
 }
   
-  let result = translatePigLatin("consonant");
+  let result = translatePigLatin("algorithm");
 
   console.log(result);
