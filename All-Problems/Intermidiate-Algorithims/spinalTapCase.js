@@ -3,7 +3,15 @@ Spinal Tap Case
 */
 
 function spinalCase(str) {
-    return str;
+   
+  let camelCase = str.replace(/([a-z])([A-Z])/g, '$1 $2');
+camelCase
+  let handleCase = camelCase.replace(/\s|_/g, '-').toLowerCase();
+
+  return handleCase
+
   }
   
-  spinalCase('This Is Spinal Tap');
+  let result = spinalCase('thisIsSpinalTap');
+
+  result;
