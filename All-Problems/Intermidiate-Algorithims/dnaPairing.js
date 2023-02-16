@@ -22,10 +22,7 @@ function pairElement(str) {
     
     let createArray = str.split('');
 
-    return createArray.map(value => {
-        let result = [value,calculatePair(value)];
-        return result;
-    });
+    return createArray.map(value => [value,calculatePair(value)]);
   }
   
   let res = pairElement("GCG");
