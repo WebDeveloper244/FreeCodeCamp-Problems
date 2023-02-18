@@ -6,7 +6,7 @@ function uniteUnique(...arr) {
  let newArr = []
  let createOneArr = arr.flat();
  createOneArr.forEach(ele =>{
-    if(newArr.indexOf(ele) === -1) return newArr.push(ele) 
+    if(newArr.indexOf(ele) === -1) newArr.push(ele) 
  })
  return newArr
 }
