@@ -1,6 +1,16 @@
 /*  
-Find LArgest and Smallest Number in Array
+Find Largest and Smallest Number in Array
 */
 
-let arr = [32,67,8,1,9,87];
+let arr1 = [32,67,8,1,9,87];
 
+function minimumNbr(arr1){ 
+   return arr1.reduce((minimumNbr,nbr)=> Math.min(minimumNbr, nbr)) 
+}
+console.log(minimumNbr(arr1));
+
+
+
+let arr = [32, 67, 8, 1, 9, 87];
+let largestNum = Math.max(...arr);
+console.log(largestNum);
