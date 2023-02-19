@@ -10,4 +10,4 @@ function findLongestWordLength(str) {
     return longestWord.length
 }
 let result = findLongestWordLength("The quick brown fox jumped over the lazy dog")
-console.log(result)
+console.log(result);
