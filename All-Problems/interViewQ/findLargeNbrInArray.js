@@ -69,6 +69,3 @@ let res = newArr.reduce((acum,nbr,index,arr)=>{
 },0)
 
 console.log(res);
-
-
-
