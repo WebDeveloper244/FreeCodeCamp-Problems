@@ -3,18 +3,16 @@ Sum All Odd Fibonacci Numbers
 */
 
 function sumFibs(num) {
-    let prevNumber = 0;
-    let currNumber = 1;
-    let result = 0;
-    while (currNumber <= num) {
-      if (currNumber % 2 !== 0) {
-        result += currNumber;
-      }
-      currNumber += prevNumber;
-      prevNumber = currNumber - prevNumber;
+ let a = 0;
+ let b = 1;
+ for (let i=1; i<=num; i++){
+
+    if(b%2 === 1){
+        a+=b
     }
-  
-    return result;
+    
+
+ }
   }
   
   let result = sumFibs(4);
