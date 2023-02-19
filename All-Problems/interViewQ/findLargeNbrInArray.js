@@ -16,9 +16,6 @@ let largestNum = Math.max(...arr);
 console.log(largestNum);
 
 
-
-
-
 /*
 Merge two sorted array in Acending Order and remove duplicate order
 */
@@ -56,4 +53,22 @@ let person = {
 }
 
 console.log(person.carCollection.name1);
-console.log(person2?.carCollection?.name1);
+// console.log(person2?.carCollection?.name1);
+
+/* 
+Find the Average using reduce method
+*/
+
+let newArr = [8,8,8,8,4];
+
+let res = newArr.reduce((acum,nbr,index,arr)=>{
+  
+   let result = acum+nbr/arr.length
+   return result
+
+},0)
+
+console.log(res);
+
+
+
