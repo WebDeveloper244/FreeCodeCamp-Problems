@@ -14,4 +14,5 @@ function addTogether() {
   }
      
      let result = addTogether(5, undefined);
-     console.log(result)
+     console.log(result);
+     

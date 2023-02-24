@@ -69,3 +69,12 @@ let res = newArr.reduce((acum,nbr,index,arr)=>{
 },0)
 
 console.log(res);
+
+let arr2 = [4,9,16,25,36]
+
+let reduceArr = arr2.reduce((Acum,ele)=>{
+    debugger;
+    return Acum += ele
+})
+
+console.log(reduceArr);
